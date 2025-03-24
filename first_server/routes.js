@@ -31,6 +31,7 @@ export const requestHandler = (req, res) => {
         return res.end();
       });
     });
+    
   }
 
   res.setHeader("Content-type", "text/html");

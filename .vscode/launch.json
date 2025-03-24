@@ -11,7 +11,7 @@
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/first_server/app.js",
       "restart": true,
-      "runtimeExecutable": "nodemon",
+      "runtimeExecutable": "${workspaceFolder}/first_server/node_modules/.bin/nodemon",
       "console": "integratedTerminal"
     }
   ]
