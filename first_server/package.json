@@ -1,0 +1,16 @@
+{
+  "name": "first_server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "module 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "John Sims",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
