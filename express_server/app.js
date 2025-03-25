@@ -10,6 +10,7 @@ const __dirname = getDirname(import.meta.url);
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
@@ -19,4 +20,3 @@ app.use((req, res, next) => {
 });
 
 app.listen(3000);
-// module.exports = path.dirname(require.main.filename)
