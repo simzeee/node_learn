@@ -3,10 +3,9 @@ import bodyParser from "body-parser";
 import adminRoutes from "./routes/admin.js";
 import shopRoutes from "./routes/shop.js";
 import path from "path";
-import { fileURLToPath } from "url";
+import { getDirname } from "./util/path.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = getDirname(import.meta.url);
 
 const app = express();
 
@@ -20,3 +19,4 @@ app.use((req, res, next) => {
 });
 
 app.listen(3000);
+// module.exports = path.dirname(require.main.filename)
